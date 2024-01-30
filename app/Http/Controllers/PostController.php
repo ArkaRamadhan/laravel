@@ -134,7 +134,7 @@ class PostController extends Controller
     {
         //validate form
         $this->validate($request, [
-            'image'     => 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'image'     => 'image|mimes:jpeg,jpg,png|max:2048',
             'nama'     => 'required|min:3',
             'alamat'   => 'required|min:10',
             'tempat_lahir'  => 'required|min:3',

@@ -10,7 +10,7 @@
 </head>
 <body style="background: lightgray">
 
-    <div class="container mt-5">
+    <div class="container mt-5" style="position: relative">
         <div class="row">
             <div class="col-md-20">
                 <div>
@@ -20,9 +20,13 @@
                 </div>
                 <div class="card border-0 shadow-sm rounded" style="margin-left: -6.5rem; margin-right:-6.5rem;">
                     <div class="card-body" style="width: 100%">
+                        
                         <a href="{{ route('posts.create') }}" class="btn btn-md btn-success mb-3">TAMBAH POST</a>
+                        @extends('master')
+                        
 
                         <table class="table table-striped">
+                            
                             <thead>
                               <tr>
                                 <th scope="col">GAMBAR</th>
